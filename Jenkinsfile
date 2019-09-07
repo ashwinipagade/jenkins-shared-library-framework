@@ -1,3 +1,4 @@
+@Library('jenkins-library@master') _
 pipeline {
   agent any
   stages {
