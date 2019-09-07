@@ -1,9 +1,13 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('build') {
       steps {
-        echo 'test'
+                gitCheckout(
+                branch: "master",
+                url: "https://github.com/ashwinipagade/jenkins-shared-library-framework.git"
+            )
+     
       }
     }
   }
